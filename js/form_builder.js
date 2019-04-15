@@ -170,13 +170,17 @@ $(document).ready(function () {
 				
 				// If label is empty, field aligns to the left
 				// var holding;
-				// console.log(label.text())
+				// console.log(label.text());
 				// if (label.text() === "") {
-				// 	holding = label.detach();
-				// 	el.find('.controls').css("margin-left", "0px");
+				// 	holding = label.hide();
+				// 	// el.find('.controls').css("margin-left", "0px");
 				// } else {
-				// 	holding.append(el.find('.controls'))
-				// 	el.find('.controls').css("margin-left", "180px");
+				// 	console.log("entered else");
+				// 	// holding.appendTo(el.find('.controls'));
+				// 	// el.find('.controls').append(holding);
+				// 	// el.find('.controls').css("margin-left", "180px");
+				// 	// holding = null;
+				// 	label.show();
 				// }
 
 				input.attr('placeholder', $(this.prefix + 'placeholder').val()).attr('id', name);
@@ -184,12 +188,12 @@ $(document).ready(function () {
 				var checkbox = checkbox = $(this.prefix + 'required');
 				// looks at checkbox to toggle required
 				if (!checkbox.prop('checked')) {
-					console.log('unchecked');
+					// console.log('unchecked');
 					this.needed = false;
 					input.attr('required', false);
 					label.removeClass('required');
 				} else {
-					console.log('checked');
+					// console.log('checked');
 					this.needed = true;
 					input.attr('required', true);
 					label.addClass('required');
@@ -227,12 +231,12 @@ $(document).ready(function () {
 				var checkbox = $(this.prefix + 'required');
 				// looks at checkbox to toggle required
 				if (!checkbox.prop('checked')) {
-					console.log('unchecked');
+					// console.log('unchecked');
 					this.needed = false;
 					textarea.attr('required', false);
 					label.removeClass('required');
 				} else {
-					console.log('checked');
+					// console.log('checked');
 					this.needed = true;
 					textarea.attr('required', true);
 					label.addClass('required');
@@ -309,12 +313,12 @@ $(document).ready(function () {
 				var checkbox = $(this.prefix + 'required');
 				// looks at checkbox to toggle required
 				if (!checkbox.prop('checked')) {
-					console.log('unchecked');
+					// console.log('unchecked');
 					this.needed = false;
 					select.attr('required', false);
 					label.removeClass('required');
 				} else {
-					console.log('checked');
+					// console.log('checked');
 					this.needed = true;
 					select.attr('required', true);
 					label.addClass('required');
@@ -404,12 +408,12 @@ $(document).ready(function () {
 				var checkbox = $(this.prefix + 'required');
 				// looks at checkbox to toggle required
 				if (!checkbox.prop('checked')) {
-					console.log('unchecked');
+					// console.log('unchecked');
 					this.needed = false;
 					select.attr('required', false);
 					label.removeClass('required');
 				} else {
-					console.log('checked');
+					// console.log('checked');
 					this.needed = true;
 					select.attr('required', true);
 					label.addClass('required');
@@ -499,12 +503,12 @@ $(document).ready(function () {
 				var checkbox = $(this.prefix + 'required');
 				// looks at checkbox to toggle required
 				if (!checkbox.prop('checked')) {
-					console.log('unchecked');
+					// console.log('unchecked');
 					this.needed = false;
 					select.attr('required', false);
 					label.removeClass('required');
 				} else {
-					console.log('checked');
+					// console.log('checked');
 					this.needed = true;
 					select.attr('required', true);
 					label.addClass('required');
@@ -545,12 +549,12 @@ $(document).ready(function () {
 				var checkbox = $(this.prefix + 'required');
 				// looks at checkbox to toggle required
 				if (!checkbox.prop('checked')) {
-					console.log('unchecked');
+					// console.log('unchecked');
 					this.needed = false;
 					input.attr('required', false);
 					label.removeClass('required');
 				} else {
-					console.log('checked');
+					// console.log('checked');
 					this.needed = true;
 					input.attr('required', true);
 					label.addClass('required');
@@ -591,12 +595,12 @@ $(document).ready(function () {
 				var checkbox = $(this.prefix + 'required');
 				// looks at checkbox to toggle required
 				if (!checkbox.prop('checked')) {
-					console.log('unchecked');
+					// console.log('unchecked');
 					this.needed = false;
 					input.attr('required', false);
 					label.removeClass('required');
 				} else {
-					console.log('checked');
+					// console.log('checked');
 					this.needed = true;
 					input.attr('required', true);
 					label.addClass('required');
