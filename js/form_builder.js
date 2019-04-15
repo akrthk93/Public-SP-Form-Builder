@@ -433,11 +433,12 @@ $(document).ready(function () {
 				// loop through each select option
 				el.find('input[type=radio]').each(function (key, val) {
 					// if radio has value that isn't just "on", show it
-					var val_and_split = $(this).val().length > 0 && $(this).val() !== 'on' ?
-						$(this).val() + split :
-						'';
+					// var val_and_split = $(this).val().length > 0 && $(this).val() !== 'on' ?
+					// 	$(this).val() + split :
+					// 	'';
 
-					list_options += val_and_split + $(this).closest('label').text().trim() + "\n";
+					// list_options += val_and_split + $(this).closest('label').text().trim() + "\n";
+					list_options += $(this).closest('label').text().trim() + "\n";
 				});
 
 				$(this.prefix + 'name').val('');
