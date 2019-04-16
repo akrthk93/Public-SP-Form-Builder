@@ -158,6 +158,10 @@ input[type=text] {
 	width: auto;
 }
 
+/* .modal-header {
+	cursor: move;
+} */
+
 .modal-body .control-group {
 	margin-bottom: 20px;
 }

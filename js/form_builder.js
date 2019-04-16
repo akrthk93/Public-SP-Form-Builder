@@ -725,6 +725,9 @@ $(document).ready(function () {
 
 		// show options modal
 		$modal.modal('show');
+		// $modal.draggable({
+		// 	handle: ".modal-header"
+		// });
 	});
 
 	// options modal save button
@@ -751,22 +754,22 @@ $(document).ready(function () {
 	});
 
 	// changing form to two columns
-	$("#n-columns").on("change", function () {
-		var v = $(this).val();
-		if (v === "1") {
-			var $col = $('.form-body .col-md-12').toggle(true);
-			$('.form-body .col-md-6 .draggable').each(function (i, el) {
-				$(this).remove().appendTo($col);
-			})
-			$('.form-body .col-md-6').toggle(false);
-		} else {
-			var $col = $('.form-body .col-md-6').toggle(true);
-			$(".form-body .col-md-12 .draggable").each(function (i, el) {
-				$(this).remove().appendTo(i % 2 ? $col[1] : $col[0]);
-			});
-			$('.form-body .col-md-12').toggle(false);
-		}
-	});
+	// $("#n-columns").on("change", function () {
+	// 	var v = $(this).val();
+	// 	if (v === "1") {
+	// 		var $col = $('.form-body .col-md-12').toggle(true);
+	// 		$('.form-body .col-md-6 .draggable').each(function (i, el) {
+	// 			$(this).remove().appendTo($col);
+	// 		})
+	// 		$('.form-body .col-md-6').toggle(false);
+	// 	} else {
+	// 		var $col = $('.form-body .col-md-6').toggle(true);
+	// 		$(".form-body .col-md-12 .draggable").each(function (i, el) {
+	// 			$(this).remove().appendTo(i % 2 ? $col[1] : $col[0]);
+	// 		});
+	// 		$('.form-body .col-md-12').toggle(false);
+	// 	}
+	// });
 
 	// the form editor is a droppable area that accepts components,
 	// converts them to elements and makes them sortable
