@@ -123,6 +123,10 @@ input[type=text] {
 	background: #FFF;
 }
 
+input, textarea, select {
+	width: auto;
+}
+
 /* ELEMENTS */
 
 .element {
