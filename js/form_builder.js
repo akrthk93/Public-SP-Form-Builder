@@ -89,7 +89,7 @@ $(document).ready(function () {
 		updateSource: function () {
 			var content = "<form method=\"" + this.method + "\" " +
 				"action=\"" + this.action + "\" " +
-				"class=\"form-horizontal\">\n" +
+				"class=\"form-inline\">\n" +
 				$("#content").html() +
 				"\n</form>";
 
