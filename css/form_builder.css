@@ -134,7 +134,7 @@ input, textarea, select {
 	cursor: move;
 	padding: 10px;
 	border: 1px solid #fff;
-	display: inline-block;
+	/* display: inline-block; */
 }
 
 .element:hover {
